@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body style="background-color: rgb(203, 241, 241);">
+    
+    <!-- Form 1 -->
+    <form action="form.html" method="get">
+      <h1>Sign Up</h1>
+      <label for="username"
+        >Name:
+        <br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your full name"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="email"
+        >Email:
+        <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="password"
+        >Password:
+        <br />
+        <input
+          type="password"
+          name="password"
+          maxlength="8"
+          placeholder="8 characters"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="confirm-password"
+        >Confirm Password:
+        <br />
+        <input
+          type="password"
+          name="confirm-password"
+          maxlength="8"
+          placeholder="8 characters"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="dob"
+        >Date Of Birth:
+        <br />
+        <input type="date" name="dob" required />
+      </label>
+      <br /><br />
+      <label
+        >Gender:
+        <br />
+        <input
+          type="radio"
+          name="gender"
+          id="male"
+          value="male"
+          checked
+        />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="other">Other</label>
+      </label>
+      <br /><br />
+      <label for="user-photo"
+        >Insert your photo:
+        <br />
+        <input type="file" name="user-photo" id="user-photo" required/>
+      </label>
+      <br /><br />
+      <label for="user-resume"
+        >Insert your resume:
+        <br />
+        <input type="file" name="user-resume" id="user-resume" required/>
+      </label>
+      <br /><br />
+      <label for="security-questions"
+        >Security Questions:
+        <br />
+        <select name="security-questions" id="security-questions" required>
+          <option value="" disabled selected>Select</option>
+          <option value="1">
+            Do you have experience of internship?
+          </option>
+          <option value="2">
+            In which city or town was your first job?
+          </option>
+        </select>
+        <br />
+        <textarea name="comments" id="comments" cols="32" rows="8" required></textarea>
+      </label>
+      <br /><br />
+      <input
+        type="checkbox"
+        name="terms-conditions"
+        id="terms-conditions"
+        required
+      />
+      <label for="terms-conditions">I agree terms and conditions</label>
+      <br /><br />
+      <input type="submit" value="Register" />
+    </form>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- Form 2 -->
+    <form action="form.html" method="get">
+        <fieldset>
+            <legend><h2>Personal Details</h2></legend>
+            <label for="salutation">Salutation 
+                <br>
+                <select name="salutation" id="salutation" required>
+                    <option value="" disabled selected>None</option>
+                    <option value="1">Mr</option>
+                    <option value="2">Miss</option>
+                </select>
+            </label>
+            <br><br>
+            <label for="name">First name:
+                <input type="text" name="first-name" required>
+            </label>
+            <br><br>
+            <label for="last-name">Last name:
+                <input type="text" name="last-name" required>
+            </label>
+            <br><br>
+            <label for="gender">Gender:
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <br><br>
+            <label for="email">Email:
+                <input type="email" name="email" required>
+            </label>
+            <br><br>
+            <label for="dob">Date of birth:
+                <input type="date" name="dob" required>
+            </label>
+            <br><br>
+            <label for="address">Address:
+            <br>
+                <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+  </body>
+</html>
